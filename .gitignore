@@ -1,0 +1,40 @@
+# Machine-local downloads, toolchains, vendor sources and build outputs.
+# Keep empty directory structure in Git.
+/downloads/**
+!/downloads/**/
+!/downloads/**/.gitkeep
+/openstlinux/**
+!/openstlinux/**/
+!/openstlinux/**/.gitkeep
+/build/**
+!/build/**/
+!/build/**/.gitkeep
+/deploy/**
+!/deploy/**/
+!/deploy/**/.gitkeep
+
+# Local configuration: keep shared configuration and examples tracked.
+.env
+.env.local
+*.local.conf
+*.local.mk
+
+# Editor / OS temporary files.
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+
+# M33 toolchains and downloaded vendor packages.
+/toolchains/**
+!/toolchains/**/
+!/toolchains/**/.gitkeep
+/third_party/**
+!/third_party/**/
+!/third_party/**/.gitkeep
+
+# Eclipse / STM32CubeIDE workspace state (keep project descriptions tracked).
+.metadata/
