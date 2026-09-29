@@ -3,9 +3,19 @@
 /downloads/**
 !/downloads/**/
 !/downloads/**/.gitkeep
+# Vendor trees carry their own ignore exceptions; exclude the whole reference tree.
+/downloads/atk-reference/
+
+# Local machine-transfer bundles and their manifests.
+/DDG-STM32MP257-learning-handoff-*.zip
+/TRANSFER-INFO.txt
+/TRANSFER-MANIFEST.sha256
 /openstlinux/**
 !/openstlinux/**/
 !/openstlinux/**/.gitkeep
+# Ignore entire component directories so vendor .gitignore negations cannot
+# expose extracted source files. Keep ostl-linux/.gitkeep at the workspace level.
+/openstlinux/sources/ostl-linux/*/
 /build/**
 !/build/**/
 !/build/**/.gitkeep

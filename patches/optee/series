@@ -1,0 +1,2 @@
+# DDG patches, applied after the ST Developer Package patches.
+# One relative filename per line, for example: 0001-ddg-change.patch -p1
